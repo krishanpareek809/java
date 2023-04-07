@@ -1,3 +1,7 @@
+import java.util.Scanner;
+
+import javax.lang.model.element.Element;
+
 class Arrays {
     public static void main(String[] args) {
         // int[] marks = new int[3];       // 1-D Array
@@ -40,6 +44,39 @@ class Arrays {
         //     System.out.println();
         // }
 
+
+        // Practice problems on Arrays
+
+        // float[] arr = {1.4f, 2.4f, 5.7f, 6.8f, 4.6f};
+        // float sum = 0;
+        // for (float element:arr){
+        //     sum = sum + element;
+        // }
+        // System.out.println(sum);
+
+        // int[] arr = {1,4,6,7,8};
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter the value of n: ");
+        // int n = sc.nextInt();
+        // boolean isInArray = false;
         
+        // for(int element: arr){
+        //     if(n==element){
+        //         isInArray = true;
+        //         break;
+        //     } 
+        // }
+        // if(isInArray){
+        //     System.out.println(n+ " is present in the array");
+        // } else{
+        //     System.out.println(n+ " is not present in the array");
+        // }
+
+        int [] marks = {89, 98, 87, 86, 96};
+        int sum = 0;
+        for(int element: marks){
+            sum = sum + element;
+        }
+        System.out.println("The value of average marks is: " + sum/marks.length);
     }
 }
