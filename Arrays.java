@@ -72,11 +72,28 @@ class Arrays {
         //     System.out.println(n+ " is not present in the array");
         // }
 
-        int [] marks = {89, 98, 87, 86, 96};
-        int sum = 0;
-        for(int element: marks){
-            sum = sum + element;
-        }
-        System.out.println("The value of average marks is: " + sum/marks.length);
+        // int [] marks = {89, 98, 87, 86, 96};
+        // int sum = 0;
+        // for(int element: marks){
+        //     sum = sum + element;
+        // }
+        // System.out.println("The value of average marks is: " + sum/marks.length);
+
+
+        // Sum of two matrices
+        // int[][] mat1 = {{1,2,3},
+        //                 {1,2,3}};
+        // int[][] mat2 = {{1,2,3},
+        //                 {1,2,3}};
+        // int[][] result = {{0,0,0},
+        //                   {0,0,0}};
+        
+        // for(int i=0; i<mat1.length; i++){          // row number of times
+        //     for(int j=0; j<mat1[i].length; j++){   // column number of times
+        //         result[i][j] = mat1[i][j] + mat2[i][j];
+        //         System.out.print(result[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }
     }
 }
