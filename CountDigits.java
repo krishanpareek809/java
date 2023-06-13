@@ -13,3 +13,5 @@ class CountDigits {
         System.out.println("Total no. of digits in x is: " + res);
     }
 }
+
+// Time Complexity = Theta(d) d = number of digits
