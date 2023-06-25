@@ -162,9 +162,10 @@ public class Methods {
 
 
     // Program 8
+    /*
     static void pattern_Rec2(int n){
         if(n>0){
-            for(int i=1; i<=n; i++){
+            for(int i=n; i>=1; i--){
                 System.out.print("*");
             }
             System.out.println();
@@ -174,5 +175,38 @@ public class Methods {
 
     public static void main(String[] args) {
         pattern_Rec2(4);
+    }
+    */
+
+
+    // Program 9
+    /*
+    static float celsiusToFahrenheit(float Celsius){
+        float Fahrenheit = (Celsius * 9/5) + 32;
+        return Fahrenheit;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Temperature in Fahrenheit is: " + celsiusToFahrenheit(34));
+    }
+    */
+
+
+    // Program 10
+    static int sum(int n){
+        int sum = 0;
+        for(int i=1;i<=n;i++){
+            sum += i;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int n;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of n: ");
+        n = sc.nextInt();
+        System.out.printf("The sum of first " + n + " natural numbers is: ");
+        System.out.println(sum(n));
     }
 }
