@@ -50,9 +50,6 @@ public class Constructors{
 
 
 // Copy Constructors
-
-import javax.swing.text.Style;
-
 class Student{
     String name;
     int age;
