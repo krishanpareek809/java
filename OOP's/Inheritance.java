@@ -43,6 +43,7 @@ public class Inheritance {
 
 
 // Constructors in Inheritance in Java
+/*
 class Base{
     
     Base(){
@@ -86,3 +87,83 @@ public class Inheritance{
         ChildOfDerived cd = new ChildOfDerived(1, 8, 9);
     }
 }
+*/
+
+
+/*
+class Circle{
+    public int radius;
+
+    Circle(int r){
+        this.radius = r;
+    }
+
+    public double area(){
+        return Math.PI*this.radius*this.radius;
+    }
+}
+
+class Cylinder extends Circle{
+    public int height;
+
+    Cylinder(int r, int h){
+        super(r);
+        this.height = h;
+    }
+
+    public double area(){
+        return 2*Math.PI*this.radius*(this.height+this.radius);
+    }
+
+    public double volume(){
+        return Math.PI*this.radius*this.radius*this.height;
+    }
+}
+
+public class Inheritance{
+    public static void main(String[] args) {
+        Cylinder c = new Cylinder(2, 7);
+
+        System.out.println("Area of Cyclinder: " + c.area());
+        System.out.println("Volume of Cyclinder: " + c.volume());
+    }
+}
+*/
+
+
+class Rectangle{
+    public int length;
+    public int breadth;
+
+    Rectangle(int l, int b){
+        this.length = l;
+        this.breadth = b;
+    }
+
+}
+
+class Cuboid extends Rectangle{
+    public int height;
+
+    Cuboid(int h){
+        super(3, 4);
+        this.height = h;
+    }
+
+    public long area(){
+        return 2*((this.length*this.breadth)+(this.breadth*this.height)+(this.height*this.length));
+    }
+
+    public long volume(){
+        return this.length*this.breadth*this.height;
+    }
+}
+
+public class Inheritance{
+    public static void main(String[] args) {
+        Cuboid c = new Cuboid(5);
+
+        System.out.println("Area of Cuboid: " + c.area());
+        System.out.println("Volume of Cuboid: " + c.volume());
+    }
+} 
