@@ -101,6 +101,76 @@ public class Patterns {
 
 
         // Solid Rhombus
+        // for(int i=1; i<=n; i++){
+        //     // spaces
+        //     for(int j=1; j<=n-i; j++){
+        //         System.out.print(" ");
+        //     }
+
+        //     // stars
+        //     for(int j=1; j<=n; j++){
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();  
+        // }
+
+
+        // Hollow Rhombus
+        // for(int i=1; i<=n; i++){
+        //     // spaces
+        //     for(int j=1; j<=n-i; j++){
+        //         System.out.print(" ");
+        //     }
+
+        //     // stars
+        //     for(int j=1; j<=n; j++){
+        //         if(i==1 || i==n || j==1 || j==n){
+        //             System.out.print("*");
+        //         } else {
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+
+
+        // Number Pyramid
+        // for(int i=1; i<=n; i++){
+        //     // spaces
+        //     for(int j=1; j<=n-i; j++){
+        //         System.out.print(" ");
+        //     }
+
+        //     // numbers
+        //     for(int j=1; j<=i; j++){
+        //         System.out.print(i+ " ");
+        //     }
+        //     System.out.println();
+        // }
+
+
+        // Palindromic Pattern
+        // for(int i=1; i<=n; i++){
+        //     // spaces
+        //     for(int j=1; j<=n-i; j++){
+        //         System.out.print(" ");
+        //     }
+
+        //     // 1st half numbers
+        //     for(int j=i; j>=1; j--){
+        //         System.out.print(j);
+        //     }
+
+        //     // 2nd half numbers
+        //     for(int j=2; j<=i; j++){
+        //         System.out.print(j);
+        //     }
+        //     System.out.println();
+        // }
+
+
+        // Diamond Pattern
+        // upper half
         for(int i=1; i<=n; i++){
             // spaces
             for(int j=1; j<=n-i; j++){
@@ -108,10 +178,24 @@ public class Patterns {
             }
 
             // stars
-            for(int j=1; j<=n; j++){
-                System.out.print("* ");
+            for(int j=1; j<=2*i-1; j++){
+                System.out.print("*");
             }
-            System.out.println();  
+            System.out.println();
+        }
+
+        // lower half
+        for(int i=n; i>=1; i--){
+            // spaces
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+
+            // stars
+            for(int j=1; j<=2*i-1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
