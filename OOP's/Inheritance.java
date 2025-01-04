@@ -135,6 +135,22 @@ class Rectangle{
     public int length;
     public int breadth;
 
+    public int getLength(){
+        return length;
+    }
+
+    public void setLength(int length){
+        this.length = length;
+    }
+    
+    public int getBreadth() {
+        return breadth;
+    }
+
+    public void setBreadth(int breadth) {
+        this.breadth = breadth;
+    }
+
     Rectangle(int l, int b){
         this.length = l;
         this.breadth = b;
@@ -148,6 +164,14 @@ class Cuboid extends Rectangle{
     Cuboid(int h){
         super(3, 4);
         this.height = h;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     public long area(){
