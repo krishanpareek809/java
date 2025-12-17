@@ -1,9 +1,9 @@
-import java.util.*;
+import java.util.LinkedList;
 
-class MyArrayList {
+class MyLinkedList {
     public static void main(String[] args) {
-        ArrayList<Integer> l1 = new ArrayList<>();
-        ArrayList<Integer> l2 = new ArrayList<>();
+        LinkedList<Integer> l1 = new LinkedList<>();
+        LinkedList<Integer> l2 = new LinkedList<>();
         l2.add(15);
         l2.add(18);
         l2.add(19);
@@ -29,7 +29,5 @@ class MyArrayList {
             System.out.print(l1.get(i));
             System.out.print(", ");
         }
-
-        
     }
 }
