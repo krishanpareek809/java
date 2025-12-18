@@ -11,5 +11,6 @@ class MyArrayDeque {
         System.out.println(ad1.getFirst());
         System.out.println(ad1.getLast());
         System.out.println(ad1.contains(1));
+        System.out.println(ad1);
     }
 }
